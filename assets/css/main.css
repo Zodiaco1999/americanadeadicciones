@@ -35,18 +35,23 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
 
 table {
 	border-collapse: collapse;
@@ -67,7 +72,9 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -3563,14 +3570,14 @@ body {
 #menu {
 	background-color: #353535;
 	color: rgba(255, 255, 255, 0.5);
-	-moz-transform: translateX(20rem);
-	-webkit-transform: translateX(20rem);
-	-ms-transform: translateX(20rem);
-	transform: translateX(20rem);
-	-moz-transition: -moz-transform 0.4s ease, box-shadow 0.4s ease, visibility 0.4s;
-	-webkit-transition: -webkit-transform 0.4s ease, box-shadow 0.4s ease, visibility 0.4s;
-	-ms-transition: -ms-transform 0.4s ease, box-shadow 0.4s ease, visibility 0.4s;
-	transition: transform 0.4s ease, box-shadow 0.4s ease, visibility 0.4s;
+	-moz-transform: translateX(30rem);
+	-webkit-transform: translateX(30rem);
+	-ms-transform: translateX(30rem);
+	transform: translateX(30rem);
+	-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+	-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+	-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+	transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 	-webkit-overflow-scrolling: touch;
 	background: #5fc6b7;
 	box-shadow: none;
@@ -3790,7 +3797,7 @@ body.is-menu-visible #menu {
 	-ms-justify-content: center;
 	justify-content: center;
 	background-attachment: fixed;
-	background-image: url("../../images/banner.jpg");
+	background-image: url("../../images/banner-sm.jpg");
 	background-position: bottom left;
 	background-size: cover;
 	cursor: default;
@@ -4213,6 +4220,7 @@ body.is-preload #banner:before {
 	}
 }
 
+/*** Estilos 5-4-22 ***/
 /* Nav */
 nav {
 	margin: 0 auto 0 20px;
@@ -4232,21 +4240,29 @@ nav {
 
 /* Resolucion de minima para mostrar el menu */
 @media screen and (min-width: 44em) {
-  .show-mobile {
-    display: none;
-  }
-  .hide-mobile {
-    display: block;
-  }
-  nav {
-	margin: 0 auto 0 20px;
-  }
-  #menu {
-	display: none;
-  }
-  .content {
-	min-height: 830px;
-  }
+	.show-mobile {
+		display: none;
+	}
+
+	.hide-mobile {
+		display: block;
+	}
+
+	nav {
+		margin: 0 auto 0 20px;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.content {
+		min-height: 830px;
+	}
+
+	#banner {
+		background-image: url("../../images/banner.jpg");
+	}
 }
 
 @media screen and (max-width: 368px) {
@@ -4265,6 +4281,8 @@ nav {
 	min-height: 100px;
 }
 
+/* gallery */
+
 .container {
 	width: 100%;
 	min-height: 50vh;
@@ -4280,6 +4298,9 @@ nav {
 	grid-gap: 20px;
 }
 
-.gallery img {
+.gallery>a>img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
+
