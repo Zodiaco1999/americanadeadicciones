@@ -4445,4 +4445,12 @@ nav {
 	}
 }
 
+.major {
+	p {
+		font-size: 20px;
+	}
 
+	h3 {
+		margin-top: 30px;
+	}
+}
