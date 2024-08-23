@@ -9,15 +9,16 @@
 	<meta name="keywords" content="" />
 	<link rel="icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
 </head>
 
 <body class="is-preload">
 	<!-- Header -->
 	<div class="hide-mobile">
-		<header id="header">
+		<header id="header" class="back-transparent">
 			<a href="index.html">
-				<img class="logo" src="images/logos/Blanco_Horizontal.png" alt="American Foundation on Addictions">				
-		    </a>
+				<img class="logo" src="images/logos/Blanco_Horizontal.png" alt="American Foundation on Addictions">
+			</a>
 			<nav>
 				<a href="index.html">Home</a>
 				<a href="about.html">About us</a>
@@ -27,10 +28,10 @@
 			</nav>
 		</header>
 	</div>
-	
+
 	<div class="show-mobile">
 		<header id="header">
-			<img class="logo-sm" src="images/logos/Blanco_Horizontal.png" alt="American Foundation on Addictions">		
+			<img class="logo-sm" src="images/logos/Blanco_Horizontal.png" alt="American Foundation on Addictions">
 			<nav>
 				<a href="#menu"></a>
 			</nav>
@@ -69,43 +70,90 @@
 
 	<div id="banner">
 		<div class="inner">
-
 			<h1>Help Us to Help</h1>
 			<h1>American Foundation on Addictions</h1>
 			<p>We are an entity that seeks to lead the work by promoting and recognizing the rights of children,
 				adolescents and their families.</p>
+			<a href="programmes.html" class="button btn-green">our strategy ➜</a>
 
 		</div>
 	</div>
 
+	<div class="video-control">
+		<a id="btn-pause" class="btn-pause">
+			<img id="img-btn-pause" src="images/utilities/pause-button.svg">
+		</a>
+	</div>
+
+	<div class="box-banner">
+		<h4>who whe are</h4>
+		<p>
+			We are a philanthropic entity that promotes well-being familiar by finding and expanding solutions to
+			promote
+			opportunities and reverse the climate crisis through different strategiescollective.
+		</p>
+		<a href="about.html">learn more ➜</a>
+	</div>
+
 	<!-- One -->
-	<section id="one" class="wrapper">
-		<div class="inner">
-			<div class="feature">
-				<div class="feature">
-					<header class="heading">
-						<h2>About Us</h2>
-					</header>
-					<div class="row">
-						<div class="col-6 col-12-small" >
-							<p>We are an entity that seeks to lead the work by promoting and recognizing the rights of children,
-								adolescents and their families. At the American Foundation of Addictions we work hard to prevent
-								drug use in vulnerable populations; For this we have linked to the private sector, public sector
-								and national and international organizations.</p>
-							<p>Learn some details of our foundation and its programs in the following interview. Health to all.
-							</p>
-						</div>
-						<div class="col-6 col-12-small">
-							<iframe src="https://www.youtube.com/embed/JqZ9uBEMTpg" class="video"
-								frameborder="0" scrolling="no"></iframe>
-						</div>
-					</div>	
+	<section style="margin-top: 200px;">
+		<div class="row">
+			<div class="col-6 col-12-small mission">
+				<h2>Our Mission in Action</h2>
+				<p>We are an entity that seeks to lead the work by promoting and recognizing the rights of
+					children,
+					adolescents and their families. At the American Foundation of Addictions we work hard to
+					prevent
+					drug use in vulnerable populations; For this we have linked to the private sector,
+					public sector
+					and national and international organizations.
+				</p>
+			</div>
+		</div>
+	
+		<div class="container-box-img">
+			<div class="box-img">
+				<div class="box-img-text">
+					<h2>Facing climate change</h2>
+					<p>
+						The American Foundation on Addictions has been
+						committed since 2018 to its mission of improving the
+						quality of life of families around the world by
+						eliminating the barriers that limit family well-being,
+						through educational and work projects, it has managed to
+						transform public health, agriculture and renewable energy systems globally in
+						highly vulnerable communities, benefiting thousands of families
+					</p>
+				</div>
+			</div>
+			<img src="https://www.rockefellerfoundation.org/wp-content/uploads/2024/06/RF_MOI_Q2_2024_Banner_Hero_R2-1440x810.png"
+				alt="">
+		</div>
+	</section>
+
+	<section class="wrapper style1">
+		<div class="container-box-img1">
+			<img src="https://www.rockefellerfoundation.org/wp-content/uploads/2024/06/RF_MOI_Q2_2024_Banner_Hero_R2-1440x810.png"
+				alt="">
+			<div class="box-img1">
+				<div class="box-img-text1">
+					<h2>PROTECTING WOMEN AND GIRLS FROM DOMESTIC VIOLENCE</h2>
+					<p>
+						1 in 5 women and girls have suffered physical, psychological or sexual violence from their partner
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Two -->
+	<section class="wrapper">
+		<lite-youtube videoid="JqZ9uBEMTpg"></lite-youtube>		
+		<div class="box-video">
+			<h1>Our Collective Work</h1>
+			<p>We at The Rockefeller Foundation work with our grantees and partners to reverse climate change and advance human opportunity.</p>
+		</div>	
+	</section>
+
 	<section id="two" class="wrapper style1">
 		<div class="inner">
 			<header class="heading major">
@@ -152,7 +200,6 @@
 						</div>
 					</article>
 				</div>
-
 			</div>
 		</div>
 	</section>
@@ -170,11 +217,9 @@
 					<header class="heading">
 						<h3>Testimony program home with rules, children without drugs </h3>
 					</header>
-					<p><iframe src="https://www.youtube.com/embed/u8AkC8GMzDU" height="100%"
-							width="100%"></iframe></p>
+					<p><lite-youtube videoid="u8AkC8GMzDU"></lite-youtube></iframe></p>
 					<ul class="actions special">
-						<li><a href="https://www.youtube.com/@AmericanadeAdicciones" class="button primary">Learn
-								More</a></li>
+						<li><a href="https://www.youtube.com/@AmericanadeAdicciones" class="button primary">Learn More</a></li>
 					</ul>
 				</div>
 
@@ -182,11 +227,9 @@
 					<header class="heading">
 						<h3>Young people without drugs parents with rules</h3>
 					</header>
-					<p><iframe src="https://www.youtube.com/embed/hn9SFH1oaAs?si=45hyRyqTFBw9wHu3"
-							height="100%" width="100%"></iframe></p>
+					<p><lite-youtube videoid="hn9SFH1oaAs"></lite-youtube></iframe></p>
 					<ul class="actions special">
-						<li><a href="https://www.youtube.com/@AmericanadeAdicciones" class="button primary">Learn
-								More</a></li>
+						<li><a href="https://www.youtube.com/@AmericanadeAdicciones" class="button primary">Learn More</a></li>
 					</ul>
 				</div>
 
@@ -194,11 +237,9 @@
 					<header class="heading">
 						<h3>Drug <br>Classification</h3>
 					</header>
-					<p><iframe src="https://www.youtube.com/embed/y-jzB1ps4ag"  height="100%"
-							width="100%"></iframe></p>
+					<p><lite-youtube videoid="y-jzB1ps4ag"></lite-youtube></iframe></p>
 					<ul class="actions special">
-						<li><a href="https://www.youtube.com/@AmericanadeAdicciones" class="button primary">Learn
-								More</a></li>
+						<li><a href="https://www.youtube.com/@AmericanadeAdicciones" class="button primary">Learn More</a></li>
 					</ul>
 				</div>
 
@@ -286,11 +327,12 @@
 	</section>
 
 	<!-- Scripts -->
+	<script src="assets/js/index.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
 </body>
+
 </html>

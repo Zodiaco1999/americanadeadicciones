@@ -3467,7 +3467,8 @@ body {
 	-webkit-justify-content: space-between;
 	-ms-justify-content: space-between;
 	justify-content: space-between;
-	/* color: rgba(255, 255, 255, 0.5); */
+	background: #4CBFAF;
+	color: rgba(255, 255, 255, 0.5);
 	cursor: default;
 	height: 5rem;
 	left: 0;
@@ -3525,6 +3526,11 @@ body {
 	text-align: center;
 	top: 0;
 	width: 1rem;
+}
+
+#header.back-transparent {
+	transition: ease-in;
+	background: transparent;
 }
 
 #header.scrolled {
@@ -3984,7 +3990,7 @@ body.is-menu-visible #menu {
 }
 
 #banner header p {
-	color: #4cbfaf;
+	color: #4CBFAF;
 }
 
 #banner ul.alt li {
@@ -4069,12 +4075,13 @@ body.is-menu-visible #menu {
 	background: #575151;
 	content: '';
 	display: block;
-	height: 100%;
+	height: 125.1%;
+	width: 100%;
+	top: 0;
 	left: 0;
 	opacity: 0.25;
 	position: absolute;
-	top: 0;
-	width: 100%;
+	margin-top: -48px;
 }
 
 body.is-preload #banner>.inner {
@@ -4410,11 +4417,241 @@ nav {
 	}
 }
 
+
 #video-background {
-	display: none;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 114%;
+	object-fit: cover;
 }
 
-/* Resolucion de minima para mostrar el menu */
+.video-control {
+	position: absolute;
+	right: 0;
+	margin-top: 1%;
+	margin-right: 3%;
+}
+
+#img-btn-pause {
+	width: 60px;
+	cursor: pointer;
+}
+
+.box-banner {
+	margin-top: -34px;
+	margin-left: 4%;
+	position: absolute;
+	width: 69%;
+	height: 300px;
+	padding: 20px;
+	font-weight: 500;
+	background-color:#001613;
+
+	h4, p, a {
+		margin-left: 8%;
+	}
+
+	h4 {
+		margin-top: 4%;
+		color: #4CBFAF;
+	}
+	
+	p {
+		margin-top: -10px;
+		margin-right: 3%;
+		font-size: 24px;
+		font-weight: 460;
+		color: #ffffff;
+	}
+
+	a {
+		color: #ffffff;
+		font-weight: 570;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 16px;
+		font-family: "Fjalla One", sans-serif;
+		margin-top: -18px;
+		display: block;
+		padding: 0;
+	}
+}
+
+.mission {
+	margin: 15% 20px 20px 10%;
+
+	p {
+		font-size: 18px;
+	}
+}
+
+.container-box-img {
+	display: flex;
+	margin-bottom: 4%;
+
+	img {
+		width: 450px;
+		margin-left: -110px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+}
+
+.box-img {
+	width: 67%;
+	height: 450px;
+	padding: 20px;
+	/* background: linear-gradient(to bottom right,#007e76,rgba(113,209,203,.5));	 */
+	background: linear-gradient(to bottom right,#36887d,rgba(113,209,203,.5));	
+	z-index: 1;
+}
+
+.box-img-text {
+	width: 450px;
+	height: auto;
+	margin: 9% 0 80px 13%;
+	color: white;
+
+	h2 {
+		color: white;
+	}
+
+	p {
+		font-size: 18px;
+	}
+}
+
+.container-box-img1 {
+	display: flex;
+	margin-bottom: 4%;
+
+	img {
+		width: 450px;
+		height: 450px;
+		margin-left: 110px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+}
+
+.box-img1 {
+	width: 67%;
+	position: absolute;
+	right: 0;
+	height: 450px;
+	padding: 20px;
+	/* background: linear-gradient(to bottom right,#007e76,rgba(113,209,203,.5));	 */
+	background: linear-gradient(to bottom left,#e6e6fa,rgba(113,209,203,.5));	
+	z-index: 1;
+}
+
+.box-img-text1 {
+	display: block;
+	width: 500px;
+	height: auto;
+	margin: 15% 0 0 25%;
+	color: #000;
+
+	p {
+		font-size: 18px;
+	}
+}
+
+.box-video {
+	background-color: rgba(52,95,93,.7);
+}
+
+/* Resolucion de movil */
+@media screen and (max-width: 43.9em) {
+    #video-background {
+    	display: none;
+    }
+
+	.video-control {
+		display: none;
+	}
+
+	.box-banner {
+		margin-left: 0;
+		width: 100%;
+		height: auto;
+
+	
+		h4, p, a {
+			margin-left: 4%;
+		}
+	
+		h4 {
+			font-size: 14px;
+			color: #4CBFAF;
+		}
+		
+		p {
+			margin-top: -3px;
+			font-size: 20px;
+			font-weight: 460;
+			color: #ffffff;
+		}
+	
+		a {
+			font-size: 14px;
+		}
+	}
+	
+	.container-box-img {
+		display: block;
+		margin-bottom: 4%;
+
+		img {
+			height: 300px;
+			width: 300px;
+			margin-top: -140px;
+			margin-left: 15%;
+		}
+	}
+
+	.box-img { 
+		width: 100%;
+		height: 540px;
+
+	}
+
+	.box-img-text {
+		margin: auto;
+		width: auto;
+		height: auto;
+	}
+
+	.container-box-img1 {
+		display: relative;
+		margin-bottom: 4%;
+
+		img {
+			height: 300px;
+			width: 300px;
+			margin-top: 260px;
+			margin-left: 15%;
+		}
+	}
+
+	.box-img1 { 
+		display: relative;
+		width: 100%;
+		height: 400px;
+	}
+
+	.box-img-text1 {
+		margin: auto;
+		width: auto;
+		height: auto;
+	}
+	
+}
+
+/* Resolucion de escritorio */
 @media screen and (min-width: 44em) {
 	.show-mobile {
 		display: none;
@@ -4442,15 +4679,5 @@ nav {
 
 	.img-md {
 		height: 355px;
-	}
-
-	#video-background {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 }

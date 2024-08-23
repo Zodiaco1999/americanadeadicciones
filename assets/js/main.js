@@ -110,25 +110,4 @@
 				resetForms: true,
 				side: 'right'
 			});
-
-
 })(jQuery);
-
-var header = document.getElementById('header');
-window.addEventListener('scroll', () => {
-	if (window.scrollY > 0) {
-		header.classList.add('scrolled');
-	} else {
-		header.classList.remove('scrolled');
-	}
-});
-
-// window.addEventListener('resize' , () => {
-// 	if (window.innerWidth >= 330) {
-
-// 	} else {
-// 		header.classList.add('scrolled');
-
-// 	}
-
-// });
