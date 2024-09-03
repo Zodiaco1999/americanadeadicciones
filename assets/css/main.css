@@ -4214,6 +4214,7 @@ body.is-preload #banner:before {
 
 #footer .footer-logo {
 	margin-top: -60px;
+	margin-left: -3%;
     flex: 1;
     text-align: left;
 }
@@ -4278,11 +4279,6 @@ body.is-preload #banner:before {
 @media screen and (max-width: 480px) {
     #footer {
         padding: 3rem 0 1rem 0;
-    }
-
-    #footer .footer-icons .icons {
-        flex-direction: column;
-        gap: 0.5rem;
     }
 }
 
@@ -4656,6 +4652,53 @@ nav {
 	}
 }
 
+.inner-md {
+	margin: 0 10%;
+
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+.text-center {
+	margin: -30px auto 2rem auto;
+	max-width: 80%;
+	text-align: center;
+	width: 45.71429rem;
+	font-size: 1.5rem;
+}
+
+.img-sm {
+	width: 400px;
+	height:230px;
+	margin-bottom: 20px;
+}
+
+.mt-2 {
+	margin-top: 40px;
+}
+
+.my-6 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.animation {
+	animation-name: example;
+	animation-duration: 2s;
+}
+
+@keyframes example {
+	from {
+	  /* pushes the sun down past the viewport */
+	  transform: translateY(110vh);
+	}
+	to {
+	  /* returns the sun to its default position */
+	  transform: translateY(0);
+	}
+  }
+
 /* Resolucion de movil */
 @media screen and (max-width: 43.9em) {
     #video-background {
@@ -4739,6 +4782,10 @@ nav {
 		margin: auto;
 		width: auto;
 		height: auto;
+	}
+
+	.img-sm {
+		width: 100%;
 	}
 	
 }
