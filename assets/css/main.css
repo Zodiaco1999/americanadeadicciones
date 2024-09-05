@@ -4652,7 +4652,7 @@ nav {
 	}
 }
 
-.inner-md {
+.inner-sm {
 	margin: 0 10%;
 
 	p {
@@ -4686,6 +4686,10 @@ nav {
 .animation {
 	animation-name: example;
 	animation-duration: 2s;
+}
+
+.inner-md {
+	margin: 0 250px;
 }
 
 @keyframes example {
