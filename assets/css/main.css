@@ -3100,7 +3100,7 @@ table.alt tbody tr td {
 	border-radius: 100%;
 	border: 1px solid #4cbfaf;
 	padding: 0.75rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .profiles .profile .image img {
@@ -3158,6 +3158,34 @@ table.alt tbody tr td {
 		width: 100%;
 	}
 
+}
+
+.profile-h {
+	cursor: pointer;
+}
+
+.profile-htext>span {
+	color: #65C8BA;
+	font-weight:400;
+	font-size: 1.1rem;
+}
+
+.profile>a {
+	font-size: .8rem;
+	font-weight: 500;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.profile-text {
+    margin-top: 5%;
+    text-align: left;
+    display: none;
+}
+
+/* Visible con altura automática y opacidad */
+.d-block {
+	display: block;
 }
 
 /* wrapper */

@@ -64,71 +64,83 @@
 	</div>
 
 	<section class="wrapper">
-		<div class="inner my-6 animation">
+		<div class="inner animation">
             <header class="heading major">
 				<h1>Executive Team</h1> 
 			</header>
             <p class="text-center">
-                With offices in New York USA, Barcelona Spain Bogotá Colombia
-                and a conference center in Dubai, EAU The American Foundation
-                Addiction is focused on delivering impact at scale for the world’s
-                most vulnerable. Learn more about the places we work.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, veritatis quo excepturi neque, nihil autem placeat, harum illum optio sunt inventore doloribus assumenda quis dolores dicta hic quos consequuntur laboriosam.
             </p>
-		</div>
-	</section>
-
-	<section  class="wrapper">
-		<div class="inner">
 			<div class="profiles">
 				<div class="profile">
-					<div class="image">
-						<img src="images/pic07.jpg" alt="" />
+					<div class="profile-h" onclick="toggleText('one')">
+						<div class="image">
+							<img src="images/pic07.jpg" alt="" />
+						</div>
+						<header class="profile-htext">
+							<h3>Patricia Santos</h3>
+							<span>Founder & CEO</span>
+						</header>
 					</div>
-					<header class="heading">
-						<h3>Patricia Santos</h3>
-						<p>Founder & CEO</p>
-					</header>
-					<p>Master's Degree in the Treatment of Addictive Behaviors from the University of Valencia in Spain;
-						Psychologist graduated from the Konrad Lorenz University Foundation, Lecturer and workshop
-						leader in neuropsychology in Latin America and the EEUU, she has more than 10 years of
-						experience in modifying disruptive behaviors against the use of psychoactive substances and
-						behavior modification in children and adolescents.</p>
+					<a onclick="toggleText('one')">Read profile ➜</a>
 
-					<p>Creator of the selective prevention program based on scientific evidence Young people without
-						drugs Parents With Rules, implemented in public and private educational institutions, co-author
-						of the “Be Productive” Mental Health at Work Program which seeks to advise and train
-						organizations in construction of its internal alcohol and drug policies, it is currently
-						conducting an interdisciplinary investigation whose objective is to bring together the fields of
-						public health, criminology and criminal justice, focused on the prevention of drug use and
-						trafficking in the Americas.</p>
+					<div id="one" class="profile-text">
+						<p>Master's Degree in the Treatment of Addictive Behaviors from the University of Valencia in Spain;
+							Psychologist graduated from the Konrad Lorenz University Foundation, Lecturer and workshop
+							leader in neuropsychology in Latin America and the EEUU, she has more than 10 years of
+							experience in modifying disruptive behaviors against the use of psychoactive substances and
+							behavior modification in children and adolescents.</p>
+	
+						<p>Creator of the selective prevention program based on scientific evidence Young people without
+							drugs Parents With Rules, implemented in public and private educational institutions, co-author
+							of the “Be Productive” Mental Health at Work Program which seeks to advise and train
+							organizations in construction of its internal alcohol and drug policies, it is currently
+							conducting an interdisciplinary investigation whose objective is to bring together the fields of
+							public health, criminology and criminal justice, focused on the prevention of drug use and
+							trafficking in the Americas.</p>
+					</div>
+				</div>
+				
+				<div class="profile">
+					<div class="profile-h" onclick="toggleText('two')">
+						<div class="image">
+							<img src="images/luis.jpg" alt="" />
+						</div>
+						<header class="profile-htext">
+							<h3>Luis Maldonado</h3>
+							<span>Director of Academic Programs</span>
+						</header>
+					</div>
+					<a onclick="toggleText('two')">Read profile ➜</a>
+					<div id="two" class="profile-text">
+						<p>Career educator in public education in Bogotá D.C., PhD in Education from the Universidad del
+							Valle. Researcher of the relationship of Latin American regional integration processes and their
+							relationship with education and culture. Permanent reader of humanities, literature, cosmology
+							and biology.</p>
+					</div>
 
 				</div>
 				<div class="profile">
-					<div class="image">
-						<img src="images/luis.jpg" alt="" />
+					<div class="profile-h" onclick="toggleText('three')">
+						<div class="image">
+							<img src="images/jacky.jpg" alt="" />
+						</div>
+						<header class="profile-htext">
+							<h3>Jackeline Morales</h3>
+							<span>Director Executive</span>
+						</header>
 					</div>
-					<header class="heading">
-						<h3>Luis Maldonado</h3>
-						<p>Director of Academic Programs</p>
-					</header>
-					<p>Career educator in public education in Bogotá D.C., PhD in Education from the Universidad del
-						Valle. Researcher of the relationship of Latin American regional integration processes and their
-						relationship with education and culture. Permanent reader of humanities, literature, cosmology
-						and biology.</p>
-
-				</div>
-				<div class="profile">
-					<div class="image">
-						<img src="images/jacky.jpg" alt="" />
+					<a onclick="toggleText('three')">Read profile ➜</a>
+					<div id="three" class="profile-text">
+						<p>Master in education. Lorem ipsum dolor sit amet consectetur adipisicing elit. At quisquam porro 
+							commodi excepturi, dolores nesciunt possimus est sunt repellat et dolor sequi mollitia ipsam 
+							praesentium ut quam doloribus explicabo maiores?</p>
 					</div>
-					<header class="heading">
-						<h3>Jackeline Morales</h3>
-						<p>Director Executive</p>
-					</header>
-					<p>Master in education.</p>
+				
 
 				</div>
 			</div>
+		</div>
 	</section>
 
 	<!-- Footer -->
@@ -179,6 +191,9 @@
 			</div>
     	</div>
     </section>
+
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/our-people.js"></script>
 
 </body>
 
