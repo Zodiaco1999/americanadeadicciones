@@ -1973,11 +1973,11 @@ button.wide,
 	min-width: 13rem;
 }
 
-input[type="submit"].icon:before,
-input[type="reset"].icon:before,
-input[type="button"].icon:before,
-button.icon:before,
-.button.icon:before {
+input[type="submit"].icon-r:before,
+input[type="reset"].icon-r:before,
+input[type="button"].icon-r:before,
+button.icon-r:before,
+.button.icon-r:before {
 	margin-right: 0.5rem;
 }
 
@@ -2398,13 +2398,13 @@ input[type="radio"]:focus+label:before {
 
 /* Icon */
 
-.icon {
+.icon-r {
 	text-decoration: none;
 	border-bottom: none;
 	position: relative;
 }
 
-.icon:before {
+.icon-r:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
@@ -2417,15 +2417,15 @@ input[type="radio"]:focus+label:before {
 	font-weight: 400;
 }
 
-.icon>.label {
+.icon-r>.label {
 	display: none;
 }
 
-.icon.solid:before {
+.icon-r.solid:before {
 	font-weight: 900;
 }
 
-.icon.brands:before {
+.icon-r.brands:before {
 	font-family: 'Font Awesome 5 Brands';
 }
 
@@ -2668,11 +2668,11 @@ ul.actions.fit.stacked {
 		width: 100%;
 	}
 
-	ul.actions:not(.fixed) li input[type="submit"].icon:before,
-	ul.actions:not(.fixed) li input[type="reset"].icon:before,
-	ul.actions:not(.fixed) li input[type="button"].icon:before,
-	ul.actions:not(.fixed) li button.icon:before,
-	ul.actions:not(.fixed) li .button.icon:before {
+	ul.actions:not(.fixed) li input[type="submit"].icon-r:before,
+	ul.actions:not(.fixed) li input[type="reset"].icon-r:before,
+	ul.actions:not(.fixed) li input[type="button"].icon-r:before,
+	ul.actions:not(.fixed) li button.icon-r:before,
+	ul.actions:not(.fixed) li .button.icon-r:before {
 		margin-left: -0.5rem;
 	}
 
@@ -2696,7 +2696,7 @@ ul.icons li:last-child {
 	padding-right: 0;
 }
 
-ul.icons li .icon {
+ul.icons li .icon-r {
 	-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2715,19 +2715,19 @@ ul.icons li .icon {
 	width: 2.75rem;
 }
 
-ul.icons li .icon:hover {
+ul.icons li .icon-r:hover {
 	box-shadow: inset 0 0 0 1px #72ccc0;
 	color: #72ccc0;
 }
 
-ul.icons li .icon:hover:active {
+ul.icons li .icon-r:hover:active {
 	background-color: #4cbfaf;
 	color: #ffffff;
 }
 
 @media screen and (max-width: 736px) {
 
-	ul.icons li .icon {
+	ul.icons li .icon-r {
 		font-size: 1.25rem;
 		height: 2.75rem;
 		line-height: 2.75rem;
@@ -3092,7 +3092,7 @@ table.alt tbody tr td {
 	margin-bottom: 0;
 }
 
-.profiles .profile ul.icons li .icon {
+.profiles .profile ul.icons li .icon-r {
 	margin-bottom: 0;
 }
 
@@ -4078,7 +4078,7 @@ body.is-menu-visible #menu {
 	margin: 0 0 3rem 0;
 }
 
-#banner>.inner .icon {
+#banner>.inner .icon-r {
 	border-radius: 100%;
 	border: 1px solid #ffffff;
 	color: #ffffff;
@@ -4145,7 +4145,7 @@ body.is-preload #banner:before {
 		font-size: 1.25rem;
 	}
 
-	#banner>.inner .icon {
+	#banner>.inner .icon-r {
 		border-radius: 100%;
 		border: 1px solid #ffffff;
 		color: #ffffff;
@@ -4185,7 +4185,7 @@ body.is-preload #banner:before {
 		font-size: 1rem;
 	}
 
-	#banner>.inner .icon {
+	#banner>.inner .icon-r {
 		margin-bottom: 2rem;
 	}
 
@@ -4499,15 +4499,14 @@ nav {
 	}
 }
 
-
 #video-background {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 114%;
-	object-fit: cover;
+	display: block !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 114% !important;
+	object-fit: cover !important;
 }
 
 .video-control {
@@ -4730,6 +4729,46 @@ nav {
 	  transform: translateY(0);
 	}
   }
+
+/* Google translate*/
+
+iframe.skiptranslate {	
+	display: none !important;
+	visibility: hidden !important;
+}
+
+#google_translate_element .goog-te-gadget {	
+	margin-top: 95px;	
+	margin-right: 10px;	
+	font-size: 0;
+}
+
+.skiptranslate>span {	
+	display: none;
+}
+
+.goog-te-combo {	
+	border-color: transparent;	
+	cursor: pointer;	
+	color: white;	
+	width: 150px;
+	font-weight: 600;
+} 
+
+.icon {	
+	cursor: pointer;	
+	pointer-events: none;	
+	font-size: 18px;	
+	border: 1px solid #fff;	
+	display: flex;	
+	border-radius: 50%;	
+	width: 18px;	
+	height: 18px;	
+	position: absolute;	
+	right: 23px;	
+	top: 25px
+}
+
 
 /* Resolucion de movil */
 @media screen and (max-width: 43.9em) {
