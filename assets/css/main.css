@@ -4755,6 +4755,9 @@ iframe.skiptranslate {
 	color: white;	
 	width: 150px;
 	font-weight: 600;
+	option{
+		font-weight: 100;
+	}
 } 
 
 .icon {	
