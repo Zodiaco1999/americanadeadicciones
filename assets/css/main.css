@@ -4756,76 +4756,23 @@ iframe.skiptranslate {
 	cursor: pointer;	
 	color: white;	
 	width: 150px;
-	font-weight: 700;
-	option {
-		font-weight: 100;
-	}
+	font-weight: 600;
 } 
 
 .icon {	
-	cursor: pointer !important;	
-	pointer-events: none !important;	
-	font-size: 18px !important;
-	border: 1px solid #fff !important;	
-	display: flex !important;
-	border-radius: 50% !important;
-	width: 18px !important;	
-	height: 18px !important;
-	position: absolute !important;
-	right: 23px !important;
-	top: 29px !important;
+	cursor: pointer;	
+	pointer-events: none;	
+	font-size: 18px;	
+	border: 1px solid #fff;	
+	display: flex;	
+	border-radius: 50%;	
+	width: 18px;	
+	height: 18px;	
+	position: absolute;	
+	right: 23px;	
+	top: 25px
 }
 
-.text-mission {
-	margin-top: 200px;
-}
-
-.btn-donate {
-	padding-top: 0px !important;  
-	background-color: red;
-	color: white !important;
-	box-shadow: inset 0 0 0 1px #fff;
-	right: 200px;
-	position: absolute;;
-	line-height: 3.2rem;
-}
-
-.btn-donate:hover {
-	box-shadow: inset 0 0 0 1px #fff;
-}
-/* Modal */
-/* Estilos para el modal */
-#modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%; /* Ajusta el ancho del modal */
-    max-width: 600px; /* Ancho máximo */
-    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con transparencia */
-	padding: 20px;
-    border-radius: 8px;
-    border: none; /* Sin borde */
-    z-index: 100000; /* Asegura que esté al frente de todo */
-}
-
-/* Fondo transparente detrás del modal */
-#modal::backdrop {
-	z-index: 99999;
-    background-color: rgb(80, 78, 170); /* Fondo semi-transparente */
-}
-
-/* Imagen dentro del modal */
-#modal img {
-    width: 100%; /* Imagen adaptada al tamaño del modal */
-    border-radius: 8px;
-}
-
-/* Contenido del modal */
-#modal h1, #modal h3, #modal p {
-    text-align: center;
-    color: #333; /* Color de texto */
-}
 
 /* Resolucion de movil */
 @media screen and (max-width: 43.9em) {
