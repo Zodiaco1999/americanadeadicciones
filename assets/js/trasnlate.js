@@ -9,3 +9,10 @@ function googleTranslateElementInit() {
 require(['Magento_Theme/js/countries'], function (countries) {
     countries.init();
 });
+
+let btnModal = document.getElementById('open-modal');
+let modal = document.getElementById('modal');
+
+btnModal.addEventListener("click", () => {
+	modal.show();
+});
