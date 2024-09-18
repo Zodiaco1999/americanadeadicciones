@@ -4562,6 +4562,11 @@ nav {
 	}
 }
 
+.text-mission {
+	margin-top: 150px;
+}
+
+
 .mission {
 	margin: 15% 20px 20px 10%;
 
@@ -4644,14 +4649,12 @@ nav {
 }
 
 .video-section {
-	position: relative;
 	width: 100%;
-	height: 95vh; /* Ocupa el 90% de la altura de la ventana */
+	height: 94vh;
 	overflow: hidden;
 }
   
 .video-entre {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -4675,7 +4678,7 @@ nav {
 
 	p {
 		font-size: 20px;
-		padding: 0 90px;
+		padding: 0 30px;
 		font-weight: 500;
 	}
 }
@@ -4757,22 +4760,42 @@ iframe.skiptranslate {
 	color: white;	
 	width: 150px;
 	font-weight: 600;
+	option {
+		font-weight: 100;
+	}
 } 
 
 .icon {	
-	cursor: pointer;	
-	pointer-events: none;	
-	font-size: 18px;	
-	border: 1px solid #fff;	
-	display: flex;	
-	border-radius: 50%;	
-	width: 18px;	
-	height: 18px;	
-	position: absolute;	
-	right: 23px;	
-	top: 25px
+	cursor: pointer !important;	
+	pointer-events: none !important;		
+	font-size: 18px !important;	
+	border: 1px solid #fff !important;	
+	display: flex !important;	
+	border-radius: 50% !important;		
+	width: 18px !important;		
+	height: 18px !important;		
+	position: absolute !important;		
+	right: 23px !important;		
+	top: 29px !important;	
 }
 
+.btn-donate {
+	position: absolute;
+	right: 200px;
+	line-height: 45px;
+	background-color: red;
+	box-shadow: inset 0 0 0 2px #ffffffe0;
+	color: white !important;
+	border-color: wheat !important;
+}
+
+.btn-donate:hover {
+	box-shadow: inset 0 0 0 2px #ffffffe0;
+}
+
+.fs-22 {
+	font-size: 1.5rem;
+}
 
 /* Resolucion de movil */
 @media screen and (max-width: 43.9em) {
@@ -4870,6 +4893,11 @@ iframe.skiptranslate {
 	.img-sm {
 		width: 100%;
 	}
+
+	.video-section {
+		height: 40vh;
+	}
+
 	
 }
 
