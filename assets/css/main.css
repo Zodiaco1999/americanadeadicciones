@@ -4775,7 +4775,7 @@ iframe.skiptranslate {
 	width: 18px !important;		
 	height: 18px !important;		
 	position: absolute !important;		
-	right: 23px !important;		
+	right: 25px !important;		
 	top: 29px !important;	
 }
 
@@ -4897,8 +4897,6 @@ iframe.skiptranslate {
 	.video-section {
 		height: 40vh;
 	}
-
-	
 }
 
 /* Resolucion de escritorio */
