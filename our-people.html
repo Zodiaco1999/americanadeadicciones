@@ -35,7 +35,9 @@
 
 	<div class="show-mobile">
 		<header id="header">
-			<img class="logo-sm" src="images/logos/Blanco_Horizontal.png" alt="American Foundation on Addictions">
+			<a href="index.html">
+		       <img class="logo-sm" src="images/logos/Blanco_Horizontal.png" alt="American Foundation on Addictions">
+		    </a>  
 			<nav>
 				<a href="#menu"></a>
 			</nav>
@@ -195,6 +197,36 @@
 			</div>
     	</div>
     </section>
+
+	<dialog id="modal">
+		<div>
+			<img class="img-donate" src="images/donate.jpg" alt="Donate">
+			<div class="text-donate">
+				<h2>Help Us</h2>
+				<p>Help us fight drugs in children and adolescents.
+				   Donating aid to prevent drug use in children, adolescents and their families.			
+				   Together we will be able to prevent drug use in children and adolescents and their families.
+				</p>
+				<a id="btn-donate" class="button"><img src="images/card.svg" style="margin-right: 10px;" width="20px" />Donate with Paypal Or Debit/Credit Card</a>
+				<div id="donate-button-container">
+					<div id="donate-button"></div>
+					<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+					<script>
+					  PayPal.Donation.Button({
+						env:'production',
+						hosted_button_id:'F5RTNQ7A2T76N',
+						image: {
+						src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+						alt:'Donate with PayPal button',
+						title:'PayPal - The safer, easier way to pay online!',
+						}
+					  }).render('#donate-button');
+					</script>
+				</div>
+			</div>
+		</div>
+		<button id="btn-close" class="close-button">×</button>
+	</dialog>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>	

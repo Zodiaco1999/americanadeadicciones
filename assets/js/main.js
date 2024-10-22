@@ -111,3 +111,23 @@
 				side: 'right'
 			});
 })(jQuery);
+
+let btnModal = document.getElementById('open-modal');
+let btnClose = document.getElementById('btn-close')
+let modal = document.getElementById('modal');
+
+btnModal.addEventListener("click", () => {
+	modal.showModal();
+});
+
+btnClose.addEventListener("click", () => {
+	modal.close();
+});
+
+let btnDonate = document.getElementById('btn-donate');
+let paypalButton = document.querySelector('#donate-button-container img');
+
+btnDonate.addEventListener('click', () => {
+	paypalButton.click(); // Simulate click on PayPal button
+});
+

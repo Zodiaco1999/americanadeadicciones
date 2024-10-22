@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <style>
+		.modal {
+			z-index: 100;
+			border: none;
+			position: fixed;
+			inset: 0;
+			margin: auto;
+			padding: 2rem 3rem;
+			max-width: 80%;
+			border-radius: .5em;
+		}
+		
+		.modal::backdrop {
+			background-color: hsla(0, 1%, 17%, 0.7);
+		}
+	</style>
+
+    <div>
+        <input id="open-modal"  type="button" value="Donate" />
+    </div>
+	
+	<dialog id="modal" class="modal">
+		<div>
+			<img style="width: 200px;" src="images/donate.jpg"" alt="Donate">
+		    <div>
+				<h1>Help Us</h1>
+				<p>Help us fight drugs in children and adolescents</p>
+				<h3>Donating aid to prevent drug use in children, adolescents and their families</h3><br>
+			</div>
+		</div>
+	</dialog>
+
+	<script>
+		let btnModal = document.getElementById('open-modal');
+        let modal = document.getElementById('modal');
+        
+        btnModal.addEventListener("click", () => {
+        	modal.showModal();
+        });
+	</script>
+
+</html>
