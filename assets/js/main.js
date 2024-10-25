@@ -112,22 +112,25 @@
 			});
 })(jQuery);
 
-let btnModal = document.getElementById('open-modal');
-let btnClose = document.getElementById('btn-close')
-let modal = document.getElementById('modal');
-
-btnModal.addEventListener("click", () => {
-	modal.showModal();
-});
-
-btnClose.addEventListener("click", () => {
-	modal.close();
-});
-
-let btnDonate = document.getElementById('btn-donate');
-let paypalButton = document.querySelector('#donate-button-container img');
-
-btnDonate.addEventListener('click', () => {
-	paypalButton.click(); // Simulate click on PayPal button
-});
-
+try {
+	let btnModal = document.querySelectorAll('.btn-donate');
+	let btnClose = document.getElementById('btn-close')
+	let modal = document.getElementById('modal');
+	
+	btnModal.forEach(button => {
+		button.addEventListener('click', () => modal.showModal());
+	  });
+	
+	btnClose.addEventListener("click", () => {
+		modal.close();
+	});
+	
+	let btnDonate = document.getElementById('btn-donate-paypal');
+	let paypalButton = document.querySelector('#donate-button-container img');
+	
+	btnDonate.addEventListener('click', () => {
+		paypalButton.click(); // Simulate click on PayPal button
+	});	
+} catch {
+	console.log('fallo script paypal')
+}

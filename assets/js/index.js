@@ -22,3 +22,10 @@ $('btn-pause').addEventListener('click', function() {
 		imgPause.src = 'images/utilities/play-button.webp';
 	}
 });
+
+let btnDonate = document.getElementById('open-modal');
+let paypalButton = document.querySelector('#donate-button-container img');
+
+btnDonate.addEventListener('click', () => {
+	paypalButton.click(); // Simulate click on PayPal button
+});
