@@ -23,9 +23,11 @@ $('btn-pause').addEventListener('click', function() {
 	}
 });
 
-let btnDonate = document.getElementById('open-modal');
+let btnDonate = document.querySelectorAll('#open-modal');
 let paypalButton = document.querySelector('#donate-button-container img');
 
-btnDonate.addEventListener('click', () => {
-	paypalButton.click(); // Simulate click on PayPal button
+btnDonate.forEach(btn => {
+	btn.addEventListener('click', () => {
+		paypalButton.click();
+	})
 });
