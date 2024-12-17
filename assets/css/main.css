@@ -4928,6 +4928,10 @@ iframe.skiptranslate {
         top: 30px; 
     }
 
+	.goog-te-combo {	
+		width: auto;
+	}
+
 	#google_translate_element .goog-te-gadget {	
 		top: -12px;	
 		left: 35px;	
