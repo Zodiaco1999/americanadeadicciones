@@ -112,7 +112,6 @@
 			});
 })(jQuery);
 
-
 let btnDonate = document.querySelectorAll('#pop-up');
 let paypalButton = document.querySelector('#donate-button-container img');
 
