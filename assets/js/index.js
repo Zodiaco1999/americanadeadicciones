@@ -22,12 +22,3 @@ $('btn-pause').addEventListener('click', function() {
 		imgPause.src = 'images/utilities/play-button.webp';
 	}
 });
-
-let btnDonate = document.querySelectorAll('#open-modal');
-let paypalButton = document.querySelector('#donate-button-container img');
-
-btnDonate.forEach(btn => {
-	btn.addEventListener('click', () => {
-		paypalButton.click();
-	})
-});

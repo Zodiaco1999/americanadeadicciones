@@ -3592,18 +3592,17 @@ body {
 .logo {
 	padding-top: 40px;
 	padding-left: 25px;
-	width: 250px;
+	width: 150px;
 }
 
 .logo-sm {
+	margin-left: 15px;
 	margin-top: 15px;
 	cursor: pointer;
-	width: 135px;
+	width: 85px;
 }
 
-
 /* Menu */
-
 #menu {
 	background-color: #353535;
 	color: rgba(255, 255, 255, 0.5);
@@ -4591,6 +4590,7 @@ nav {
 	margin-bottom: 4%;
 
 	img {
+		
 		width: 450px;
 		margin-left: -110px;
 		border-radius: 50%;
@@ -4604,7 +4604,6 @@ nav {
 	padding: 20px;
 	/* background: linear-gradient(to bottom right,#007e76,rgba(113,209,203,.5));	 */
 	background: linear-gradient(to bottom right,#36887d,rgba(113,209,203,.5));	
-	z-index: 1;
 }
 
 .box-img-text {
@@ -4633,6 +4632,7 @@ nav {
 		margin-left: 110px;
 		border-radius: 50%;
 		object-fit: cover;
+		z-index: 1;
 	}
 }
 
@@ -4644,7 +4644,6 @@ nav {
 	padding: 20px;
 	/* background: linear-gradient(to bottom right,#007e76,rgba(113,209,203,.5));	 */
 	background: linear-gradient(to bottom left,#e6e6fa,rgba(113,209,203,.5));	
-	z-index: 1;
 }
 
 .box-img-text1 {
@@ -4932,6 +4931,16 @@ iframe.skiptranslate {
     z-index: 20; 
 }
 
+.m-top {
+	margin: 60px 0px
+}
+
+.email {
+	font-size: 1rem;
+	color: #fff;
+	cursor: text;
+}
+
 /* Resolucion de movil */
 @media screen and (max-width: 43.9em) {
 	#header {
@@ -5036,14 +5045,13 @@ iframe.skiptranslate {
 
 	.container-box-img1 {
 		display: relative;
-		margin-bottom: 4%;
+		margin-top: -45px;
 
 		img {
 			height: 300px;
 			width: 300px;
-			margin-top: 270px;
+			margin-top: 250px;
 			margin-left: 15%;
-			z-index: 2;
 		}
 	}
 
