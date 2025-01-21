@@ -85,8 +85,7 @@
 				<h1>Help Us</h1>
 				<p>Help us fight drugs in children and adolescents</p>
 				<h3>Donating aid to prevent drug use in children, adolescents and their families</h3><br>
-				<a href="https://www.paypal.com/donate/?business=R5P3XA5RTWCHN&no_recurring=0&item_name=Con+tu+apoyo+lograremos+prevenir+el+consumo+de+drogas+en+ni%C3%B1os+y+adolescentes+y+sus+familias&currency_code=USD"
-					class="button primary large">Donate!</a>
+				<a id="pop-up" class="button primary large">Donate!</a>
 				<h3><br></h3>
 			</header>
 			<a class="image fit"><img src="images/donate.jpg" alt="" /></a>
@@ -157,15 +156,15 @@
 		<div id="donate-button"></div>
 		<script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
 		<script>
-		  PayPal.Donation.Button({
-			env:'production',
-			hosted_button_id:'F5RTNQ7A2T76N',
-			image: {
-			src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
-			alt:'Donate with PayPal button',
-			title:'PayPal - The safer, easier way to pay online!',
-			}
-		  }).render('#donate-button');
+			PayPal.Donation.Button({
+				env:'production',
+				hosted_button_id:'MMJH64R3AGPEW',
+				image: {
+					src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+					alt:'Donate with PayPal button',
+					title:'PayPal - The safer, easier way to pay online!',
+				}
+			}).render('#donate-button');
 		</script>
 	</div>
 
