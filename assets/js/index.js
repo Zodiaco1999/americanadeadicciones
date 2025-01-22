@@ -25,8 +25,11 @@ $('btn-pause').addEventListener('click', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	const pageLoaded = sessionStorage.getItem('pageLoaded');
-	if (!pageLoaded) {
+
+	if (!pageLoaded && !isMobile()) {
 		sessionStorage.setItem('pageLoaded', 'true');
 		paypalButton.click();
 	}
 });
+
+let isMobile =  () => /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent);
