@@ -22,3 +22,11 @@ $('btn-pause').addEventListener('click', function() {
 		imgPause.src = 'images/utilities/play-button.webp';
 	}
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+	const pageLoaded = sessionStorage.getItem('pageLoaded');
+	if (!pageLoaded) {
+		sessionStorage.setItem('pageLoaded', 'true');
+		paypalButton.click();
+	}
+});
