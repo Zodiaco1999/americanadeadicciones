@@ -115,6 +115,12 @@
 let btnDonate = document.querySelectorAll('#pop-up');
 let paypalButton = document.querySelector('#donate-button-container img');
 
+document.addEventListener('DOMContentLoaded', () => {
+	if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
+		paypalButton.click()
+	}
+});
+
 btnDonate.forEach(btn => {
 	btn.addEventListener('click', () => {
 		paypalButton.click();

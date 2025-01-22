@@ -4265,8 +4265,9 @@ body.is-preload #banner:before {
 }
 
 #footer .copyright {
+	font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #footer {
@@ -4839,8 +4840,9 @@ iframe.skiptranslate {
 }
 
 .email {
-	font-size: 1rem;
-	color: #fff;
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+	color: rgba(255, 255, 255, 0.5);
 	cursor: text;
 }
 
