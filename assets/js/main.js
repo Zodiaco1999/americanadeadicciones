@@ -114,9 +114,23 @@
 
 let btnDonate = document.querySelectorAll('#pop-up');
 let paypalButton = document.querySelector('#donate-button-container img');
+let socialMedia = document.querySelector('.social_menu');
 
 btnDonate.forEach(btn => {
 	btn.addEventListener('click', () => {
 		paypalButton.click();
 	})
 });
+
+function checkZoom() {
+    let zoomLevel = Math.round(window.devicePixelRatio * 100);
+
+    if (zoomLevel > 100) {
+        socialMedia.classList.add('social_menu_zoom'); 
+    } else {
+        socialMedia.classList.remove('social_menu_zoom');
+    }
+}
+
+window.addEventListener('resize', checkZoom);
+window.addEventListener('load', checkZoom);
