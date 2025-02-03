@@ -4379,7 +4379,8 @@ nav {
     width: fit-content;
     position: fixed;
     right: 0;
-    top: 178px;
+    top: 30%;
+	bottom: auto;
     z-index: 350;
 }
 
